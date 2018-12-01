@@ -1,0 +1,207 @@
+#sec-02 {
+  padding-top: 3.6rem;
+  padding-bottom: 3rem;
+}
+
+.quote-col {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.title-col {
+  margin-bottom: 3rem;
+}
+
+.sec-02__title-container {
+  text-align: center;
+}
+
+.sec-02__title {
+  font-family: GothaM;
+  font-size: pxToRem(32px);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: .9rem;
+}
+
+.sec-02__before-title-text {
+  font-family: SansB;
+  font-size: pxToRem(16px);
+  line-height: 1.4;
+  color: #7d7d81;
+}
+
+.sec-02__before-title-text span {
+  color: #000;
+}
+
+.sec-02__card {
+  text-align: center;
+  margin: auto;
+  width: 77%;
+  padding: 1.5rem 0 0 0;
+  height: 14.9rem;
+  border: 2px solid rgba(230,174,173,.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sec-02__card:hover {
+  transition: all .3s linear;
+  border: 2px solid #e6aead;
+}
+
+.sec-02__card-img {
+  margin-bottom: .9rem;
+}
+
+.sec-02__card-logo {
+  width: 3.9rem;
+  height: 3.9rem;
+  fill: #5e5e5e;
+}
+
+.sec-02__card-text {
+  font-family: SansR;
+  font-size: pxToRem(16px);
+  line-height: pxToRem(24px);
+  padding: 0 1.9rem;
+  span {
+    display: block;
+    font-family: SansB;
+  }
+}
+
+.card-col {
+  margin-bottom: .6rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#sec-02 .row [class*=col-]:last-of-type .row:first-of-type {
+  margin-bottom: 3.5rem;
+}
+
+.sec-02__quote {
+  position: relative;
+  font-family: GothaR;
+  font-size: pxToRem(20px);
+  color: #333333;
+  line-height: 1.6;
+  span {
+    font-family: GothaB;
+  }
+  &::before {
+    display: inline-block;
+    content: url("img/sec-02/quote.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-02 {
+    padding-top: 4.8rem;
+    position: relative;
+    &::before {
+      display: block;
+      content: "Peeling Bar";
+      position: absolute;
+      font-family: GothaB;
+      font-size: pxToRem(112px);
+      color: #f4f3f3;
+      z-index: -1;
+      bottom: 13rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .quote-col {
+    margin-top: 11.7rem;
+  }
+
+  .sec-02__title {
+    font-size: pxToRem(30px);
+    margin-bottom: 1.2rem;
+    padding: 0 1rem;
+    br {
+      display: none;
+    }
+  }
+
+  .sec-02__before-title-text {
+    padding: 0 7.1rem;
+  }
+
+  .sec-02__card {
+    width: auto;
+    margin: 0;
+  }
+
+  .card-col {
+    margin-bottom: 0;
+  }
+
+  .sec-02__quote {
+    padding: 0;
+    width: 40rem;
+    margin: auto;
+    &::before {
+      left: 50%;
+      top: -5.5rem;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-02 {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    position: relative;
+    &::before {
+      font-size: pxToRem(200px);
+    }
+  }
+
+  .title-col {
+    margin-bottom: 0;
+  }
+
+  .sec-02__title-container {
+    text-align: left;
+  }
+
+  .sec-02__title {
+    padding: 0 1rem 0 0;
+    margin-bottom: .8rem;
+    line-height: 1.2;
+    br {
+      display: block;
+    }
+  }
+
+  .sec-02__before-title-text {
+    padding: 0 1.1rem 0 0;
+  }
+
+  #sec-02 .col-xl-8 .row {
+    padding-top: .4rem;
+  }
+
+  .sec-02__title-container {
+    padding-left: 4.9rem;
+    padding-top: 2.1rem;
+  }
+
+  .card-col {
+    flex: 0 0 30.4%;
+  }
+
+  #sec-02 .row [class*=col-]:last-of-type .row:first-of-type {
+    padding-left: 2.2rem;
+  }
+}

@@ -1,0 +1,159 @@
+#sec-05 {
+  padding-top: 3.9rem;
+  padding-bottom: 4.4rem;
+  background-color: #6974ea;
+
+  .sec-01__btn-container {
+    margin-top: 0;
+  }
+
+  .timer-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .sec-01__bottom-btn {
+    font-family: SansB;
+    font-size: pxToRem(14px);
+    letter-spacing: 4px;
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    width: auto;
+    padding: 0.9rem 0;
+  }
+
+  .timer-container__description {
+    color: #fff;
+    width: 10.6rem;
+    font-family: SansR;
+    font-size: pxToRem(16px);
+    line-height: 1.5;
+    padding-top: 0.6rem;
+  }
+
+  .timer-container__description-span {
+    font-family: SansB;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .timer-wrapper {
+    padding: 1.1rem 0.6rem;
+  }
+
+  .timer-container__timer {
+    display: flex;
+  }
+
+  .timer-container__bottom-span {
+    font-size: 0.625rem;
+  }
+
+  .timer-container__bottom-span:first-child {
+    width: 21%;
+  }
+
+  .timer-container__bottom-span:nth-child(2) {
+    width: 32%;
+  }
+
+  .timer-container__bottom-span:nth-child(3) {
+    width: 22%;
+  }
+
+  .timer-container__bottom-span:last-child {
+    width: 25%;
+  }
+}
+
+.sec-05__title {
+  font-family: GothaM;
+  font-size: pxToRem(40px);
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1.1rem;
+
+  span {
+    font-family: GothaB;
+    font-size: pxToRem(64px);
+    text-transform: uppercase;
+  }
+}
+
+.sec-05__subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  color: #fff;
+  margin-bottom: 1.3rem;
+}
+
+.sec-05__list-title {
+  font-family: SansR;
+  font-size: pxToRem(18px);
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+}
+
+.sec-05__list {
+  color: #ffcc00;
+  padding-left: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.sec-05__list-item {
+  margin-bottom: 0.3rem;
+}
+
+.sec-05__list-text {
+  font-family: SansR;
+  font-size: pxToRem(14px);
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #sec-05 {
+    padding-top: 8.9rem;
+    padding-bottom: 9.4rem;
+    background-image: url("img/sec-05/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .sec-01__bottom-btn {
+      width: 18rem;
+    }
+  }
+
+  #sec-05 .row [class*=col-] {
+    padding-left: 6.2rem;
+  }
+
+  .sec-05__list-title {
+    padding-right: 15rem;
+  }
+}
+@media (min-width: 1200px) {
+  .sec-05__list-title {
+    padding-right: 51rem;
+  }
+
+  #sec-05 {
+    .container-fluid {
+      position: relative;
+    }
+
+    .container-fluid::after {
+      display: block;
+      content: url("img/sec-05/photo.png");
+      position: absolute;
+      bottom: -9.7rem;
+      right: 4%;
+    }
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .container-fluid::after {
+    right: 0;
+  }
+}

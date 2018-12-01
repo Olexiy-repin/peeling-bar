@@ -1,0 +1,130 @@
+#sec-03 {
+  padding-top: 3.2rem;
+  padding-bottom: 1rem;
+}
+
+.sec-03__picture {
+  display: block;
+  text-align: center;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.sec-03__bottom-title {
+  font-family: GothaM;
+  font-size: pxToRem(38px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: .7rem;
+}
+
+.sec-03__bottom-col {
+  margin-bottom: 2.2rem;
+}
+
+.sec-03__bottom-description {
+  position: relative;
+  font-family: SansR;
+  font-size: pxToRem(18px);
+  padding-left: 4.2rem;
+  padding-right: 2rem;
+  margin-bottom: 3.5rem;
+  &::before {
+    display: block;
+    content: url("img/sec-03/share.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+  .sec-03__list-title {
+    font-family: GothaM;
+    font-size: pxToRem(20px);
+    margin-bottom: 1.9rem;
+  }
+
+  .sec-03__list {
+    font-family: SansR;
+    font-size: pxToRem(16px);
+    color: #e6aead;
+    padding-left: 1.3rem;
+  }
+
+  .sec-03__list-paragraph {
+    color: #747478;
+    line-height: 1.5;
+    span {
+      font-family: SansB;
+      color: #000;
+    }
+  }
+
+  .sec-03__list-item {
+    margin-bottom: .6rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+@media (min-width: 768px) {
+  #sec-03 {
+    padding-top: 5rem;
+  }
+
+  .sec-03__list-item {
+    padding-right: 5rem;
+  }
+
+  .sec-03__bottom-title {
+    font-size: pxToRem(38px);
+  }
+
+  .sec-03__bottom-col {
+    margin-bottom: 3.2rem;
+  }
+
+  .sec-03__picture {
+    img {
+      width: 100%;
+    }
+  }
+
+  .sec-03__bottom-description {
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .sec-03__picture {
+    left: -41%;
+    img {
+      display: block;
+      // width: 800px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-03 {
+    padding-top: 6.8rem;
+    padding-bottom: 9rem;
+  }
+
+  .sec-03__picture {
+
+    position: absolute;
+    top: 0;
+    left: -44.3%;
+    img {
+      width: auto;
+    }
+  }
+
+  .sec-03__bottom-title-container {
+    padding-left: 6rem;
+    padding-top: 7.6rem;
+  }
+}
