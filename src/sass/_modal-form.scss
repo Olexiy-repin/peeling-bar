@@ -4,6 +4,7 @@
   font-size: 1.8rem;
   color: #28292d;
   margin-bottom: 3.2rem;
+  line-height: 1.2;
 }
 
 #myModal .field {
@@ -53,6 +54,10 @@
     width: 100%;
   }
 
+  #myModal .modal-title {
+    font-size: 2rem;
+  }
+
   #myModal .sec-01__content-btn {
     margin-left: 0;
     padding: 1.2rem 3.5rem;
@@ -100,7 +105,7 @@
   }
 
   #myModal .modal-title {
-    font-size: pxToRem(38px);
+    font-size: 2rem;
   }
 
   #telModal .sec-01__content-btn {

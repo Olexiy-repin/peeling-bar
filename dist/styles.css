@@ -280,7 +280,7 @@
 
 .sec-01__side-list {
 	color: #000;
-	font-family: SansR;
+	font-family: GothaR;
 	font-size: 0.875rem;
 }
 
@@ -294,10 +294,11 @@
 
 .sec-01__side-list-text {
 	color: #000;
+	line-height: 1.2;
 }
 
 .sec-01__side-list-text span {
-	font-weight: Bold;
+	font-family: GothaB;
 }
 
 .sec-01__title {
@@ -1597,6 +1598,7 @@ img.mfp-img {
 	font-size: 1.8rem;
 	color: #28292d;
 	margin-bottom: 3.2rem;
+	line-height: 1.2;
 }
 
 #myModal .field {
@@ -2132,6 +2134,10 @@ img.mfp-img {
 	width: 100%;
 }
 
+#myModal .modal-title {
+	font-size: 2rem;
+}
+
 #myModal .sec-01__content-btn {
 	margin-left: 0;
 	padding: 1.2rem 3.5rem;
@@ -2550,7 +2556,7 @@ img.mfp-img {
 }
 
 #myModal .modal-title {
-	font-size: 2.375rem;
+	font-size: 2rem;
 }
 
 #telModal .sec-01__content-btn {

@@ -154,7 +154,7 @@
 
 .sec-01__side-list {
   color: #000;
-  font-family: SansR;
+  font-family: GothaR;
   font-size: pxToRem(14px);
 }
 
@@ -168,8 +168,9 @@
 
 .sec-01__side-list-text {
   color: #000;
+  line-height: 1.2;
   span {
-    font-weight: Bold;
+    font-family: GothaB;
   }
 }
 
