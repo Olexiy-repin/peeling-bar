@@ -1,5 +1,5 @@
 #sec-03 {
-  padding-top: 3.2rem;
+  padding-top: 1.2rem;
   padding-bottom: 1rem;
 }
 
@@ -69,9 +69,30 @@
     }
   }
 
+@media (max-width: 767px) {
+  #sec-03 {
+    .row [class*=col-]:first-of-type {
+      display: none;
+    }
+    .row [class*=col-]:last-of-type {
+      .sec-03__picture {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .sec-03__bottom-description {
+    margin-bottom: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   #sec-03 {
     padding-top: 5rem;
+    .row [class*=col-]:last-of-type {
+      .sec-03__picture {
+        display: none;
+      }
+    }
   }
 
   .sec-03__list-item {

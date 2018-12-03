@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  $('input[type="tel"]').mask('+380(99)999-99-99');
   function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
@@ -58,15 +58,7 @@ $(document).ready(function () {
     $(ref).each(function () {
       if ($(this).val() == '') {
         var errorfield = $(this);
-        if ($(this).attr("type") == 'email') {
-          var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-          if (!pattern.test($(this).val())) {
-            $("input[name=email]").val('');
-            $(this).addClass('error').parent('.field').append('<div class="allert"><p>Укажите коректный e-mail</p>' + alertImage + '</div>');
-            error = 1;
-            $(":input.error:first").focus();
-          }
-        } else if ($(this).attr("type") == 'tel') {
+        if ($(this).attr("type") == 'tel') {
           var patterntel = /^()[- +()0-9]{9,18}/i;
           if (!patterntel.test($(this).val())) {
             $("input[name=phone]").val('');
@@ -115,4 +107,11 @@ $(document).ready(function () {
 
 
 
+});
+
+$( ".sec-02__card" ).click(function() {
+  $.magnificPopup.open({
+    items: {src: '#myModal'},
+    type: 'inline'
+  });
 });

@@ -169,6 +169,12 @@
           <div class="sec-03__bottom-title-container">
             <h2 class="sec-03__bottom-title">Работаем качественно <br> и бережно </h2>
             <p class="sec-03__bottom-description">Мы знаем, что у современной девушки нет возможности “выпасть из жизни” на пару дней после пилинга. </p>
+            <picture class="sec-03__picture">
+              <source srcset="img/sec-03/lg-img.png" media="(min-width: 1200px)">
+              <source srcset="img/sec-03/lg-img.png" media="(min-width: 768px)">
+              <source srcset="img/sec-03/lg-img.png" media="(min-width: 320px)">
+              <img src="img/sec-03/sm-img.png" alt="There must be an image">
+            </picture>
             <h2 class="sec-03__list-title">Поэтому мы:</h2>
             <ul class="sec-03__list">
               <li class="sec-03__list-item">
@@ -343,8 +349,12 @@
         <div class="col-12 col-xl-6">
           <div class="form-container">
             <form class="registration sec-05__form" action="#" method="post">
-              <input class="text-input" type="text" name="name" id="form-name" required placeholder="Имя">
-              <input class="text-input" type="tel" name="phone" id="form-phone" required placeholder="Телефон">
+              <div class="field">
+                <input class="text-input" type="text" name="name" id="form-name" required placeholder="Имя">
+              </div>
+              <div class="field">
+                <input class="text-input" type="tel" name="phone" id="form-phone" required placeholder="Телефон">
+              </div>
   
               <div class="sec-01__btn-container">
                 <input style="cursor:pointer;" type="submit" class="sec-01__bottom-btn submit" value="Записаться">
@@ -493,8 +503,12 @@
     <div class="form-container">
       <form class="registration sec-07__form" action="#" method="post">
         <p class="modal-title">Заказать звонок</p>
-        <input class="text-input" type="text" name="name" id="modal-form-name" required placeholder="Имя">
-        <input class="text-input" type="tel" name="phone" id="modal-form-phone" required placeholder="Телефон">
+        <div class="field">
+          <input class="text-input" type="text" name="name" id="modal-form-name" required placeholder="Имя">
+        </div>
+        <div class="field">
+          <input class="text-input" type="tel" name="phone" id="modal-form-phone" required placeholder="Телефон">
+        </div>
   
         <div class="sec-01__btn-container">
           <input style="margin-top:3rem;" type="submit" class="sec-01__bottom-btn submit" value="Записаться">
@@ -543,7 +557,8 @@
 
   <!-- Load Scripts Start -->
          <script>var scr = {"scripts":[
-       			{"src" : "js/modal.js", "async" : false},
+       			{"src" : "js/jquery.maskedinput.min.js", "async" : false},
+            {"src" : "js/modal.js", "async" : false},
        			{"src" : "js/form-modal.js", "async" : false},
             {"src" : "js/main.js", "async" : false}
              ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);

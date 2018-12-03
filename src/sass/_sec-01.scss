@@ -2,6 +2,10 @@
   padding-top: 1.4rem;
   padding-bottom: 17.6rem;
   background-color: #e6aead;
+  background-image: url("img/sec-01/girl.png");
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .menu-btn {
@@ -181,7 +185,7 @@
   font-family: SansR;
   font-size: pxToRem(18px);
   color: #000;
-  padding-right: 13rem;
+  padding-right: 8rem;
   line-height: 1.4;
   margin-bottom: 2.1rem;
 
@@ -237,7 +241,7 @@
 }
 @media (max-width: 767px) {
   #sec-01 {
-    padding-bottom: 11.6rem;
+    padding-bottom: 33.6rem;
   }
 
   .sec-01__side-title {
@@ -368,9 +372,9 @@
   @media (min-width: 1200px) {
     #sec-01 {
       padding-top: 3.7rem;
-      padding-bottom: 18.3rem;
+      padding-bottom: 7.3rem;
       background-image: url("img/sec-01/bg.png");
-
+      background-position: 50% 0;
       .row {
         position: relative;
       }
@@ -394,7 +398,7 @@
 
     .sec-01__header {
       padding: 0 6.2rem;
-      margin-bottom: 11.1rem;
+      margin-bottom: 8.1rem;
     }
 
     .side-content {

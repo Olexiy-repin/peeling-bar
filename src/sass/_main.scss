@@ -19,3 +19,51 @@ body {
   max-width: pxToRem(1330px);
   min-width: pxToRem(320px);
 }
+
+.allert svg {
+  width: 15px
+}
+
+.allert p {
+  display: none;
+  opacity: 0;
+  padding: 5px;
+  margin-left: 5px;
+  line-height: 14px;
+  color: #000;
+  font-style: italic;
+  font-size: 13px;
+  border-radius: 4px;
+  transition: all .5s;
+  min-width: 140px;
+  text-align: center
+}
+
+.allert:hover p {
+  border: 1px solid #ff6565;
+  background: #fff;
+  display: inline;
+  position: absolute;
+  color: #4e4e4e;
+  right: 24px;
+  top: -7px;
+  opacity: 1
+}
+
+.field {
+  position: relative;
+  display: block
+}
+
+.allert {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  display: block;
+  right: 5px;
+  height: 20px;
+  width: 20px;
+  color: #ff6565;
+  cursor: default;
+  transform: translateY(-50%)
+}
