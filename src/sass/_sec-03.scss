@@ -69,7 +69,7 @@
     }
   }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   #sec-03 {
     .row [class*=col-]:first-of-type {
       display: none;
@@ -88,11 +88,6 @@
 @media (min-width: 768px) {
   #sec-03 {
     padding-top: 5rem;
-    .row [class*=col-]:last-of-type {
-      .sec-03__picture {
-        display: none;
-      }
-    }
   }
 
   .sec-03__list-item {
@@ -132,6 +127,11 @@
   #sec-03 {
     padding-top: 6.8rem;
     padding-bottom: 9rem;
+    .row [class*=col-]:last-of-type {
+      .sec-03__picture {
+        display: none;
+      }
+    }
   }
 
   .sec-03__picture {
