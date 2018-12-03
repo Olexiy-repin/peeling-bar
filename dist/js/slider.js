@@ -1,1 +1,0 @@
-$(".sec-04__mobile-slider").owlCarousel({items:1,itemsCustom:!0,loop:!0,nav:!1,dot:!0,autoHeight:!1,margin:5});

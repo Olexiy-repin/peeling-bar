@@ -17,6 +17,12 @@
   color: #000;
   border-radius: 5px;
   letter-spacing: 2px;
+  &:hover {
+    transition: all .3s linear;
+    background-color: #fff;
+    color: #e6aead;
+    border: 2px solid #fff;
+  }
 }
 
 .main-content {
@@ -35,6 +41,10 @@
   text-decoration: none;
   font-family: SansB;
   font-size: 1rem;
+  &:hover {
+    transition: all .3s linear;
+    opacity: .5;
+  }
   span {
     margin-right: .5rem;
     svg {
@@ -111,6 +121,11 @@
   padding: 0.7rem 0.6rem 0.5rem;
   text-decoration: none;
   text-align: center;
+  &:hover {
+    transition: all .3s linear;
+    background-color: #ffd5d4;
+    color: #000;
+  }
 }
 
 .sec-01__side-under-text {

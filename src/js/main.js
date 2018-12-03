@@ -99,8 +99,6 @@ $(document).ready(function () {
     var $form = $(this);
     var $data = $form.find('input');
 
-
-
     $.ajax({
       type: 'POST',
       url: 'db/registration.php',

@@ -72,7 +72,7 @@
 }
 
 .bottom-modal-content .tc {
-  font-family: FuturaPTD;
+  font-family: GothaB;
   font-size: pxToRem(24px);
   text-transform: uppercase;
   color: rgb(40, 41, 45);
@@ -81,7 +81,7 @@
 }
 
 .md_content {
-  font-family: FuturaL;
+  font-family: GothaR;
   padding: 0 40px;
   overflow: auto;
   height: 80%;
@@ -101,7 +101,7 @@
 }
 
 .md_content::-webkit-scrollbar-thumb {
-  background: #4a4ea5;
+  background: #e6aead;
   box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
 }
 

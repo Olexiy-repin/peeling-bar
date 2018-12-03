@@ -6,10 +6,10 @@ $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
 
- $db_host = "allinsol.mysql.tools";
-$db_user = "allinsol_gios"; // Логин БД
-$db_password = "qwerty123"; // Пароль БД
-$database = "allinsol_gios"; // БД
+$db_host = "khristin.mysql.tools";
+$db_user = "khristin_peeling"; // Логин БД
+$db_password = "zZEvb&108+"; // Пароль БД
+$database = "khristin_peeling"; // БД
 
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");

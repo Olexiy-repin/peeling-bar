@@ -1,16 +1,4 @@
 @font-face {
-  font-family: FuturaL;
-  src: url('fonts/FuturaFuturisLightC.woff') format("woff"),
-       url('fonts/FuturaFuturisLightC.woff2') format("woff2");
-}
-
-@font-face {
-  font-family: FuturaPTD;
-  src: url('fonts/FuturaPTDemi.woff') format("woff"),
-       url('fonts/FuturaPTDemi.woff2') format("woff2");
-}
-
-@font-face {
   font-family: GothaB;
   src: url('fonts/GothaProBol.woff') format("woff"),
        url('fonts/GothaProBol.woff2') format("woff2");
@@ -29,6 +17,24 @@
 }
 
 @font-face {
+  font-family: CleanL;
+  src: url('fonts/cleanvertising-light.woff') format("woff"),
+       url('fonts/cleanvertising-light.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: FuturaM;
+  src: url('fonts/futuramediumc.woff') format("woff"),
+       url('fonts/futuramediumc.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: GilroyL;
+  src: url('fonts/Gilroylight.woff') format("woff"),
+       url('fonts/Gilroylight.woff2') format("woff2");
+}
+
+@font-face {
   font-family: SansR;
   src: url('fonts/PTSans-Web-Regular.woff') format("woff"),
        url('fonts/PTSans-Web-Regular.woff2') format("woff2");
@@ -39,6 +45,7 @@
   src: url('fonts/PTSans-Web-Bold.woff') format("woff"),
        url('fonts/PTSans-Web-Bold.woff2') format("woff2");
 }
+
 
 
 $baseFontSize: 16px;
@@ -59,11 +66,6 @@ body {
 }
 
 .success {
-  background-image: url("img/success-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #f4f5fb;
   .sec-01__bottom-btn {
     padding: .9rem;
   }
@@ -71,6 +73,8 @@ body {
   .sec-01__header {
     padding: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .sec-01__btn-container {
@@ -80,8 +84,7 @@ body {
 }
 
 .container {
-  max-width: pxToRem(1156px);
-  min-width: pxToRem(320px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -115,21 +118,21 @@ body {
 .content-container__title {
   text-align: center;
   font-family: GothaB;
-  font-size: 2.5rem;
+  font-size: 3.6rem;
   text-transform: uppercase;
   margin-bottom: .5rem;
-  color: #fff;
-  text-shadow: 5px 0px 0 #3d3da2;
+  color: #000;
 }
 
 .content-container__subtitle {
   text-align: center;
-  font-family: SansR;
-  font-size: pxToRem(16px);
-  color: #fff;
+  font-family: SansB;
+  font-size: pxToRem(18px);
+  color: #000;
   font-weight: 100;
   margin-bottom: 2.5rem;
   line-height: 1.3;
+  padding: 0 1rem;
 }
 
 .content-container-btn-link {
@@ -155,6 +158,20 @@ body {
   }
 }
 
+.success .terms__container-item {
+  background-color: #202020;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .success .terms__container-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (min-width: 768px) {
   .success {
     .sec-01__bottom-btn {
@@ -166,6 +183,14 @@ body {
     width: pxToRem(44.8px);
   }
 
+  .content-container__title {
+    font-size: 5rem;
+  }
+
+  .content-container__subtitle {
+    padding: 0;
+  }
+
   .content-container-btn-link {
     width: 44%;
     padding: 1rem 0;
@@ -174,18 +199,15 @@ body {
   .content-container__title {
     font-size: 4rem;
   }
+
+  .success .rezart-logo {
+    top: .6rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .logo {
     width: 4.2rem;
-  }
-
-  .success {
-    background-image: url("img/success-bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .content-container-btn-link {
@@ -207,17 +229,17 @@ body {
   white-space: nowrap;
   display: block;
   text-align: center;
-  font-family: FuturaL;
-  font-size: 16px;
+  font-family: CleanL;
+  font-size: pxToRem(14px);
   text-decoration: none;
-  color: #fff !important;
+  color: #65666a !important;
   letter-spacing: .4px;
   line-height: 1.4;
   transition: color .5s linear;
   margin-right: 0;
   cursor: pointer;
   &:hover {
-    color: #fc0 !important;
+    color: #e6aead !important;
   }
 }
 
@@ -228,11 +250,10 @@ body {
 
   .terms__container-item {
     display: flex;
-    width: 84%;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     margin: 0 auto;
     align-items: center;
-    padding: .7rem !important;
+    padding: 1rem 3rem!important;
   }
 
   .terms__link {
@@ -249,9 +270,9 @@ body {
   }
 
   .terms__container-item {
-    width: 54%;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 9rem!important;
   }
 }
 
